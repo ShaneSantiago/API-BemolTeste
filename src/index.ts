@@ -2,7 +2,7 @@ import app from "./app"
 import createUsuario from "./endpoints/createUsuario"
 import deleteUsuario from "./endpoints/deleteUsuario"
 import editUsuario from "./endpoints/editUsuario"
-import getUsuarioById from "./endpoints/getAlunosById"
+import getUsuarioById from "./endpoints/getUsuariosById"
 import getUsuarios from "./endpoints/getUsuario"
 
 
