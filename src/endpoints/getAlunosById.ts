@@ -11,9 +11,9 @@ const getUsuarioById = async (req: Request, res: Response): Promise<void> => {
         const [usuario] = await connection(usuarioTableName)
         .where({ id: usuarioId })
 
-        const { id, nome, cpf, tel, bairro, cep } = usuario
+        const { id, nome, cpf, tel, bairro, cep, cidade, logradouro, uf } = usuario
 
-        res.send({ id, nome, cpf, tel, bairro, cep })
+        res.send({ id, nome, cpf, tel, bairro, cep, cidade, logradouro, uf })
 
         
     } catch (error: any) {

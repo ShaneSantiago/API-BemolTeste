@@ -10,15 +10,15 @@ export default async function editUsuario(
    try {
 
       const id = req.params.id
-      const { nome, cpf, tel, bairro, cep }: usuarios_cadastro = req.body
+      const { nome, cpf, tel, bairro, cep, cidade, logradouro, uf }: usuarios_cadastro = req.body
 
       
-       if (!nome && !cpf && !tel && !bairro && !cep) {
+       if (!nome && !cpf && !tel && !bairro && !cep && !cidade && !logradouro && !uf) {
          res.statusCode = 422
          throw new Error("Informe os novos nome, nascimento, cpf, tel ou bairro'")
       }
       await connection('usuarios_cadastrados')
-         .update({ nome, cpf, tel, bairro, cep })
+         .update({ nome, cpf, tel, bairro, cep, cidade, logradouro, uf })
          .where({ id })
 
          res.status(201).send("Usuário editado com sucesso")

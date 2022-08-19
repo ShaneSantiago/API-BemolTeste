@@ -7,9 +7,9 @@ const createUsuario = async (req: Request, res: Response): Promise<void> => {
 
     try {
 
-        const {nome, cpf, tel, bairro, cep} = req.body
+        const {nome, cpf, tel, bairro, cep, cidade, logradouro, uf} = req.body
 
-        if (!nome || !cpf || !tel || !bairro || !cep) {
+        if (!nome || !cpf || !tel || !bairro || !cep || !cidade || !logradouro || !uf) {
             res.statusCode = 422
             throw new Error("Preencha todos os campos'")
          }
@@ -31,7 +31,10 @@ const createUsuario = async (req: Request, res: Response): Promise<void> => {
             cpf,
             tel,
             bairro,
-            cep
+            cep,
+            cidade,
+            logradouro,
+            uf
         })
 
 

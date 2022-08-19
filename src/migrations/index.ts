@@ -9,7 +9,10 @@ import { usuarioTableName } from "../types"
         cpf VARCHAR(255) NOT NULL UNIQUE,
         tel VARCHAR(255),
         bairro VARCHAR(255) NOT NULL,
-        cep INT(8) VARCHAR(10) NOT NULL
+        cep INT(8) VARCHAR(10) NOT NULL,
+        cidade VARCHAR(255) NOT NULL,
+        uf VARCHAR(10) NOT NULL
+        logradouro: VARCHAR(255) NOT NULL,
     );
     `).then(() => {
         console.log("MySql tables were sucessfully created")

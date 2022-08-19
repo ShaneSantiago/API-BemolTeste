@@ -8,7 +8,10 @@ export type usuarios_cadastro = {
     cpf: string,
     tel: string,
     bairro: string,
-    cep: string
+    cep: string,
+    cidade: string,
+    logradouro: string,
+    uf: string
 }
 
 export const usuarioTableName = "usuarios_cadastrados"
