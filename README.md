@@ -20,7 +20,7 @@ Abaixo tem mais informações sobre o projeto</p>
 
 ## Endpoints
 **<p>Criar aluno:** Esse endpoint deve receber os seguintes parametros: </br>
-**Metodo Post:** http://localhost:3003/alunos/signup
+**Metodo Post:** http://localhost:3003/usuario/signup
  - "nome": "Teste",
  - "cpf": "10-10-2020",
  - "cep": "00000000000",
