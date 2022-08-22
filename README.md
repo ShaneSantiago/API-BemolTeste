@@ -7,43 +7,55 @@
 <!-- PROJECT SOBRE -->
 <h2 id="sobre">:notebook: Sobre </h2>
 
-<p align="justify">Uma API para cadastrar alunos, buscar, editar e também deletar</p>
+<p align="justify">Uma API para cadastrar, buscar, editar e também deletar</p>
 
 ## Instruções:
-<p align="justify">Basta clonar o repositório e logo após abrir o código usar o comando npm install e npm start para o projeto ficar online. Abaixo tem mais informações sobre o projeto</p>
+<p align="justify">Basta clonar o repositório e logo após abrir o código usar o comando npm install e npm start para o projeto ficar online.
+Precisará criar uma tabela no banco de dados e acrecentar as credenciais do seu banco. Para facilitar, a API está online para testes.
+Abaixo tem mais informações sobre o projeto</p>
+
+<h2 id="site">:earth_americas: Link da API </h2>
+<p>🔗 <a href="https://api-cadastro2.herokuapp.com/" target="_blank"> API </a>  </p>
+<!-- <a href="https://api-cadastro2.herokuapp.com/" onclick="return ! window.open(this.href);"> Open in a new window</a> -->
 
 ## Endpoints
 **<p>Criar aluno:** Esse endpoint deve receber os seguintes parametros: </br>
 **Metodo Post:** http://localhost:3003/alunos/signup
  - "nome": "Teste",
- - "nascimento": "10-10-2020",
- - "cpf": "00000000000",
+ - "cpf": "10-10-2020",
+ - "cep": "00000000000",
  - "tel": "12345678",
- - "bairro": "teste"
+ - "bairro": "teste",
+ - "cidade": "teste",
+ - "logradouro": "teste",
+ - "uf": "teste"
 </p>
 
-**<p>Buscar alunos:** </br>
-  **Metodo Get:** http://localhost:3003/alunos
+**<p>Buscar usuário:** </br>
+  **Metodo Get:** http://localhost:3003/usuario
 </p>
 
-**<p>Buscar alunos por ID:** </br>
- **Metodo Get:** http://localhost:3003/aluno/:id
+**<p>Buscar usuário por ID:** </br>
+ **Metodo Get:** http://localhost:3003/usuario/:id
 </p>
 
-**<p>Editar aluno:** </br>
- **Metodo Put:** http://localhost:3003/edit/aluno/:id </br>
- Deve receber o ID do aluno que será alterado
- para alterar alguma informação do aluno deve receber qualquer um parametro abaixo e preencher a nova informação que vai receber:
+**<p>Editar usuario:** </br>
+ **Metodo Put:** http://localhost:3003/edit/usuario/:id </br>
+ Deve receber o ID do usuario que será alterado
+ para alterar alguma informação do usuario deve receber qualquer um parametro abaixo e preencher a nova informação que vai receber:
  - "nome": "",
- - "nascimento": "",
  - "cpf": "",
+ - "cep": "",
  - "tel": "",
- - "bairro": ""
+ - "bairro": "",
+ - "cidade": "",
+ - "logradouro": "",
+ - "uf": "
 </p>
 
-**<p>Delete aluno:** </br>
- **Metodo Delete:** http://localhost:3003/delete/aluno/:id </br>
- Deve receber o ID do aluno que será deletado
+**<p>Delete usuario:** </br>
+ **Metodo Delete:** http://localhost:3003/delete/usuario/:id </br>
+ Deve receber o ID do usuario que será deletado
 </p>
 
 
@@ -67,12 +79,12 @@ As seguintes tecnologias foram usadas na construção do projeto:
 <h2 id="funciona">:heavy_check_mark: O que funciona</h2>
 
 ### Integração com API
-- [x] Listagem de Alunos;
-- [x] Post aluno;
-- [x] Get alunos;
-- [x] Get aluno por ID;
-- [x] Put aluno;
-- [x] Delete aluno;
+- [x] Listagem de usuário;
+- [x] Post usuário;
+- [x] Get usuário;
+- [x] Get usuário por ID;
+- [x] Put usuário;
+- [x] Delete usuário;
 
 
 
